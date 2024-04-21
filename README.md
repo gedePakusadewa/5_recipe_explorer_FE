@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+#### This is a "Recipe Explorer", project idea was generated from ChatGPT
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Project Image Desktop Preview
+![alt text](https://github.com/gedePakusadewa/5_recipe_explorer/blob/main/preview/desktop_1.png)
+![alt text](https://github.com/gedePakusadewa/5_recipe_explorer/blob/main/preview/desktop_2.png)
+![alt text](https://github.com/gedePakusadewa/5_recipe_explorer/blob/main/preview/desktop_3.png)
+![alt text](https://github.com/gedePakusadewa/5_recipe_explorer/blob/main/preview/desktop_4.png)
+![alt text](https://github.com/gedePakusadewa/5_recipe_explorer/blob/main/preview/desktop_5.png)
+![alt text](https://github.com/gedePakusadewa/5_recipe_explorer/blob/main/preview/desktop_6.png)
+![alt text](https://github.com/gedePakusadewa/5_recipe_explorer/blob/main/preview/desktop_7.png)
 
-## Available Scripts
+### Project Image Mobile Preview
+![alt text](https://github.com/gedePakusadewa/5_recipe_explorer/blob/main/preview/mobile_1.png)
+![alt text](https://github.com/gedePakusadewa/5_recipe_explorer/blob/main/preview/mobile_2.png)
+![alt text](https://github.com/gedePakusadewa/5_recipe_explorer/blob/main/preview/mobile_3.png)
+![alt text](https://github.com/gedePakusadewa/5_recipe_explorer/blob/main/preview/mobile_4.png)
+![alt text](https://github.com/gedePakusadewa/5_recipe_explorer/blob/main/preview/mobile_5.png)
+![alt text](https://github.com/gedePakusadewa/5_recipe_explorer/blob/main/preview/mobile_6.png)
+![alt text](https://github.com/gedePakusadewa/5_recipe_explorer/blob/main/preview/mobile_7.png)
 
-In the project directory, you can run:
+### Project Description:
 
-### `npm start`
+Create a Recipe Explorer application that allows users to explore, search, and save their favorite recipes. The application will use a third-party recipe API to fetch recipe data and display it to users. Users can create accounts, log in, and save their favorite recipes for easy access.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Key Features:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- User Authentication
 
-### `npm test`
+  Allow users to create accounts and log in. Implement secure authentication mechanisms to protect user data.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Recipe Search
 
-### `npm run build`
+  Integrate a recipe API (e.g., Spoonacular, Edamam) to fetch a wide variety of recipes. Implement a search functionality to allow users to find recipes based on ingredients, cuisine, or dietary preferences.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Recipe Details
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  Display detailed information about each recipe, including ingredients, instructions, and nutritional information. ~Allow users to rate and leave comments on recipes~ (NOT IMPLEMENTED).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Save and Favorite
 
-### `npm run eject`
+  Enable users to save their favorite recipes to their profile. Implement a "favorites" section where users can quickly access their saved recipes.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- User Profile
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  Create user profiles where users can view and manage their saved recipes, personal information, and preferences. ~Display a history of recently viewed recipes~(NOT IMPLEMENTED).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- ~Responsive Design~ (NOT-IMPLEMENTED)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+  Ensure the application is responsive and works well on both desktop and mobile devices.
 
-## Learn More
+- Backend API
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  Develop a backend API to handle user authentication, recipe data storage, and user-specific data. Create endpoints for user registration, login, fetching recipes, saving favorites, etc.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Data Persistence:
 
-### Code Splitting
+  Implement a database to store user information, saved recipes, and other relevant data. Use appropriate database technologies like MongoDB, PostgreSQL, or MySQL.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- ~Security~ (NOT-IMPLEMENTED)
+  
+  Implement security best practices to protect user data, including encryption for sensitive information.
 
-### Analyzing the Bundle Size
+- ~Notifications~ (NOT-IMPLEMENTED)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  Implement email notifications for account verification, password reset, and other relevant events.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#### Additional Enhancements (Optional):
 
-### Advanced Configuration
+- User Preferences
+  
+  Allow users to set dietary preferences and allergies to filter recipe recommendations.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Social Sharing
 
-### Deployment
+  Implement social sharing features, allowing users to share their favorite recipes on social media.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Recipe Collections
 
-### `npm run build` fails to minify
+  Enable users to create and share custom recipe collections or meal plans.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Shopping List
+
+  Provide an option for users to generate a shopping list based on selected recipes.
+

@@ -17,7 +17,7 @@ export const AuthContext = React.createContext(null);
 function App() {
   return (
     <div className="App-container">
-      <BrowserRouter>      
+      <BrowserRouter basename='/5_recipe_explorer_FE'>      
         <AuthProvider> 
           <Routes>
             <Route path="/" element={

@@ -1,22 +1,10 @@
 #### This is a "Recipe Explorer", project idea was generated from ChatGPT
 
-### Project Image Desktop Preview
-![alt text](https://github.com/gedePakusadewa/5_recipe_explorer/blob/main/preview/desktop_1.png)
-![alt text](https://github.com/gedePakusadewa/5_recipe_explorer/blob/main/preview/desktop_2.png)
+### Project Image Preview
 ![alt text](https://github.com/gedePakusadewa/5_recipe_explorer/blob/main/preview/desktop_3.png)
-![alt text](https://github.com/gedePakusadewa/5_recipe_explorer/blob/main/preview/desktop_4.png)
-![alt text](https://github.com/gedePakusadewa/5_recipe_explorer/blob/main/preview/desktop_5.png)
-![alt text](https://github.com/gedePakusadewa/5_recipe_explorer/blob/main/preview/desktop_6.png)
-![alt text](https://github.com/gedePakusadewa/5_recipe_explorer/blob/main/preview/desktop_7.png)
-
-### Project Image Mobile Preview
-![alt text](https://github.com/gedePakusadewa/5_recipe_explorer/blob/main/preview/mobile_1.png)
-![alt text](https://github.com/gedePakusadewa/5_recipe_explorer/blob/main/preview/mobile_2.png)
 ![alt text](https://github.com/gedePakusadewa/5_recipe_explorer/blob/main/preview/mobile_3.png)
-![alt text](https://github.com/gedePakusadewa/5_recipe_explorer/blob/main/preview/mobile_4.png)
-![alt text](https://github.com/gedePakusadewa/5_recipe_explorer/blob/main/preview/mobile_5.png)
-![alt text](https://github.com/gedePakusadewa/5_recipe_explorer/blob/main/preview/mobile_6.png)
-![alt text](https://github.com/gedePakusadewa/5_recipe_explorer/blob/main/preview/mobile_7.png)
+
+for more image preview please open preview folder
 
 ### Project Description:
 

@@ -9,11 +9,14 @@ import { useCookies } from 'react-cookie';
 const AuthProvider = ({ children }) => {
     const [token, setToken] = React.useState(null);
     const [cookies, setCookie, removeCookie] = useCookies(['user']);
-    const [isErrorInput, setIsErrorInput] = useState(false)
+    const [isErrorInput, setIsErrorInput] = useState(false);
+    const [isShowActionButton, setIsShowActionButton] = useState(true);
 
     const navigate = useNavigate();
 
-    const handleLogin = async (username, password) => {      
+    const handleLogin = async (username, password) => {
+      setIsShowActionButton(false)
+
       axios.post(UrlConst.LOGIN, {
         username, password
       }).
@@ -22,9 +25,11 @@ const AuthProvider = ({ children }) => {
         navigate('/');
         setCookie('token', res.data.token, { path: '/' });
         setIsErrorInput(false)
+        setIsShowActionButton(true)
       }).
       catch((res) =>{
         setIsErrorInput(true)
+        setIsShowActionButton(true)
       })
       
       // for fake API
@@ -67,6 +72,8 @@ const AuthProvider = ({ children }) => {
     };
 
     const handleLogInDemo= () => {
+      setIsShowActionButton(false)
+
       axios({
         method: 'post',
         url: UrlConst.LOGIN,
@@ -79,9 +86,11 @@ const AuthProvider = ({ children }) => {
         navigate('/');
         setCookie('token', res.data.token, { path: '/' });
         setIsErrorInput(false)
+        setIsShowActionButton(true)
       }).
       catch((res) =>{
         setIsErrorInput(true)
+        setIsShowActionButton(true)
       })
     };
   
@@ -97,7 +106,8 @@ const AuthProvider = ({ children }) => {
       handleSignUp,
       handleSubmitSignUp,
       handleLogInDemo,
-      isErrorInput
+      isErrorInput,
+      isShowActionButton
     };
 
     // fake API

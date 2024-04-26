@@ -37,6 +37,7 @@ const General = {
     DELETE_PROCESS_TITLE:"Delete",
     DELETE_PROCESS_TEXT:"Data is being deleted. Please wait.",
     LOGIN_AS_GUEST:"Log In As Guest (demo)",
+    PROFILE_WAIT_MESSAGE: "Please wait, your request already in process.",
   };
   
   export default General

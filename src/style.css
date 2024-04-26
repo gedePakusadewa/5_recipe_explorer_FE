@@ -72,6 +72,18 @@ input{
     margin-top:10px;
 }
 
+.login-wait-message{
+    padding-top: 10px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+
+.login-wait-message-icon{
+    color: white;
+    text-align: center;
+}
+
 @media only screen and (min-width: 768px) {
     /* for desktop */
     .login-container > div {

@@ -44,7 +44,9 @@
 
 ---
 ##### Day 13
-- add login as guest in FE and update API BE to handle it
+- ~add login as guest in FE and update API BE to handle it~
+- ~add loading login page in FE~
+- add disable update and delete in demo mode in profile page and API to check is user demos
 
 ##### Day 12
 - work on new feature

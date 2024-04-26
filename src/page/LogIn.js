@@ -1,5 +1,6 @@
 import { AuthContext } from "../App.js";
 import { useContext, useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import GeneralConst from "../resource/General.js"
 import "../style.css";
 
@@ -20,7 +21,7 @@ const LogIn = () =>{
       }
     });
   }
-
+ 
   return(
     <div className="login-container-bg">
       <div className="login-container">
@@ -41,13 +42,15 @@ const LogIn = () =>{
             name="password"
             onChange={(e)=>{updateForm(e)}}
           /><br />
-          <button
-            className="btn-cust btn-login btn-login-signup-first-child" 
-            onClick={()=>context.handleLogin(form.username, form.password)}
-          >
-            {GeneralConst.LOGIN}
-          </button>
-          {isShowSignUp && (
+          {context.isShowActionButton && (
+            <button
+              className="btn-cust btn-login btn-login-signup-first-child" 
+              onClick={()=>context.handleLogin(form.username, form.password)}
+            >
+              {GeneralConst.LOGIN}
+            </button>
+          )}
+          {(context.isShowActionButton && isShowSignUp) && (
             <button
               className="btn-cust btn-signup" 
               onClick={()=>context.handleSignUp()}
@@ -55,7 +58,7 @@ const LogIn = () =>{
               {GeneralConst.SIGNUP}
             </button>
           )}
-          {isShowSignUp === false && (
+          {(context.isShowActionButton && isShowSignUp === false) && (
             <button
               className="btn-cust btn-signup" 
               onClick={()=>context.handleLogInDemo()}
@@ -63,6 +66,16 @@ const LogIn = () =>{
               {GeneralConst.LOGIN_AS_GUEST}
             </button>
           )}
+          {context.isShowActionButton === false && (
+            <>
+              <div className="login-wait-message">
+                {GeneralConst.PROFILE_WAIT_MESSAGE}
+              </div>
+              <div className="login-wait-message-icon">
+                <FontAwesomeIcon icon="fa-solid fa-spinner" spinPulse />
+              </div>            
+            </>
+          )} 
         </div>
       </div>
     </div>

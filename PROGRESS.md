@@ -43,6 +43,9 @@
     - add padding top
 
 ---
+##### Day 13
+- add login as guest in FE and update API BE to handle it
+
 ##### Day 12
 - work on new feature
   - ~add delete account~

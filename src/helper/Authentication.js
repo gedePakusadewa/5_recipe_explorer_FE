@@ -65,6 +65,25 @@ const AuthProvider = ({ children }) => {
       // removeCookie('token' ,{path:'/'})
       // navigate('/login');
     };
+
+    const handleLogInDemo= () => {
+      axios({
+        method: 'post',
+        url: UrlConst.LOGIN,
+        data: {
+          isDemo : true
+        }
+      }).
+      then((res) => {
+        setToken(res.data.token);
+        navigate('/');
+        setCookie('token', res.data.token, { path: '/' });
+        setIsErrorInput(false)
+      }).
+      catch((res) =>{
+        setIsErrorInput(true)
+      })
+    };
   
     const handleSignUp = () => {
       navigate('/signup');
@@ -77,6 +96,7 @@ const AuthProvider = ({ children }) => {
       handleLogout,
       handleSignUp,
       handleSubmitSignUp,
+      handleLogInDemo,
       isErrorInput
     };
 

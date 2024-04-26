@@ -35,7 +35,8 @@ const General = {
     DELETE_ACCOUNT_CONFIRMATION_TEXT:"Are you sure delete this account {username}?",
     DELETE_ACCOUNT_YES_BTN:"Yes, delete this account",
     DELETE_PROCESS_TITLE:"Delete",
-    DELETE_PROCESS_TEXT:"Data is being deleted. Please wait."  
+    DELETE_PROCESS_TEXT:"Data is being deleted. Please wait.",
+    LOGIN_AS_GUEST:"Log In As Guest (demo)",
   };
   
   export default General

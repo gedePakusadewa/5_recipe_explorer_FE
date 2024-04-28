@@ -14,12 +14,15 @@ const Profile = () => {
     username:"",
     email:""
   });
-  const [isShowModalDeleteAccountConfirmation, setIsShowModalDeleteAccountConfirmation] = useState(false)
-  const [isShowModalProcess, setIsShowModalProcess] = useState(false)
+  const [isShowModalDeleteAccountConfirmation,
+    setIsShowModalDeleteAccountConfirmation] = useState(false);
+  const [isShowModalProcess, setIsShowModalProcess] = useState(false);
+  const [isUserDemo, setIsUserDemo] = useState(false);
 
   useEffect(() => {
-    getProfile()
-  }, [])
+    getProfile();
+    checkIsUserDemo();
+  }, []);
 
   const getProfile = async () => {    
     axios({
@@ -59,6 +62,20 @@ const Profile = () => {
     setIsShowModalDeleteAccountConfirmation(true)
   }
 
+  const checkIsUserDemo = () => {
+    axios({
+      method: 'get',
+      url: UrlConst.GET_IS_USER_DEMO,
+      headers: {'Authorization': "Token " + cookies['token']},
+    }).
+    then((res) => {
+      setIsUserDemo(res.data.data)
+    }).
+    catch((res) =>{
+      console.log(res);
+    })
+  }
+
   return(
     <>
       <div className="container-profile">
@@ -85,6 +102,7 @@ const Profile = () => {
           <button
             className="btn-cust btn-update-profile"
             onClick={onSubmit}
+            disabled={"disabled"}
           >
             {GeneralConst.UPDATE}
           </button>
@@ -92,6 +110,7 @@ const Profile = () => {
           <button
             className="btn-cust btn-delete-profile"
             onClick={displayModalDelete}
+            disabled={isUserDemo ? "disabled" : ""}
           >
             {GeneralConst.DELETE_ACCOUNT}
           </button>
